@@ -1,0 +1,38 @@
+main
+{
+    background-color: aqua;
+}
+.banner
+{
+    /*background-image: url(/images/mane-bgremove.png);*/
+    margin: auto;
+    margin-top: 50px;
+    width:950px;
+    height: 410px;
+    padding-left: 90px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+}
+.cn
+{
+    display: flex;
+}
+.banner-headding
+{
+    font-size: 40px;
+}
+span
+{
+    color: burlywood;
+}
+.btn-live
+{
+    margin-top: 20px;
+    padding: 9px 15px ;
+    color: bisque;
+    border-radius: 7px;
+    background-color:#830002;
+}
