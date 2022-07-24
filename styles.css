@@ -47,9 +47,9 @@ body {
 }
 
 .middle-section {
+    display: flex;
     margin: auto;
     margin-top: 50px;
-    display: flex;
     width: 1240px;
     overflow: hidden;
 }
@@ -71,9 +71,7 @@ body {
     height: 191px;
     border-radius: 8px;
 }
-.font{
-    padding-bottom: 10px;
-}
+
 
 .side-bar {
     display: flex;
@@ -99,7 +97,9 @@ body {
     text-align: center;
     border-radius: 5px;
 }
-
+.font{
+    padding-bottom: 10px;
+}
 .side-bar-box a {
     text-decoration: none;
     color: black;
@@ -149,7 +149,7 @@ hr {
 
 
 
-
+/*mobile responsivness*/
 
 @media only screen and (max-width:688px) {
     .banner {
@@ -172,7 +172,10 @@ hr {
     }
 
     .side-bar {
-        margin-left: 100px;
+        width: 100%;
+        margin-bottom: 50px;
+        align-items: center;
+        background-color: white;
     }
 
     .blogs {
@@ -182,6 +185,7 @@ hr {
 
     .blog .blog-banner img {
         width: 100%;
+        height: 100%;
     }
 
 
@@ -192,5 +196,37 @@ hr {
 
     hr {
         width: 50%;
+    }
+}
+/*tab responsiveness*/
+@media only screen and (min-width:689px) and (max-width:992px) {
+    
+.side-bar {
+    display: flex;
+    width: 100%;
+    color: white;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    
+
+    }
+    .middle-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .blog .blog-banner img{
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        width: 1240px;
     }
 }
