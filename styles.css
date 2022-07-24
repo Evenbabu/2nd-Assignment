@@ -97,9 +97,11 @@ body {
     text-align: center;
     border-radius: 5px;
 }
-.font{
+
+.font {
     padding-bottom: 10px;
 }
+
 .side-bar-box a {
     text-decoration: none;
     color: black;
@@ -126,6 +128,17 @@ body {
 
 }
 
+.hide {
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(195, 176, 9);
+    align-items: center;
+
+}
+
 footer {
     height: 300px;
     color: #E5E5E5;
@@ -149,7 +162,7 @@ hr {
 
 
 
-/*mobile responsivness*/
+/*mobile responsive*/
 
 @media only screen and (max-width:688px) {
     .banner {
@@ -197,36 +210,54 @@ hr {
     hr {
         width: 50%;
     }
+    .hide{
+        display: none;
+    }
 }
-/*tab responsiveness*/
+
+/*tab responsive*/
 @media only screen and (min-width:689px) and (max-width:992px) {
-    
-.side-bar {
-    display: flex;
-    width: 100%;
-    color: white;
-    height: 100%;
-    align-items: center;
-    margin-bottom: 50px;
-    justify-content: center;
-    flex-direction: row;
-    background-color: white;
-    
+
+    .side-bar {
+        display: flex;
+        width: 100%;
+        color: white;
+        height: 100%;
+        align-items: center;
+        margin-bottom: 50px;
+        justify-content: center;
+        flex-direction: row;
+        background-color: white;
+
 
     }
-    .middle-section{
+
+    .middle-section {
         display: flex;
         flex-direction: column;
     }
-    .blogs{
+
+    .blogs {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
     }
-    .blog .blog-banner img{
+
+    .blog .blog-banner img {
         width: 100%;
         height: 100%;
     }
-    footer{
+
+    footer {
         width: 1240px;
     }
+}
+/*laptop and pc responsive */
+@media only screen and (min-width:993px){
+    .hide{
+        display: none;
+    }
+
+
+
+
 }
