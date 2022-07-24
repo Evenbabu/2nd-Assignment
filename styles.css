@@ -45,13 +45,17 @@ body {
     margin-top: 50px;
     display: flex;
     width: 1240px;
-
+    overflow: hidden;
 }
 
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+
+}
+.blog .upcomeing-match-banner{
+    width: 400px;
 
 }
 
@@ -130,6 +134,8 @@ hr {
 .condition {
     padding: 50px;
 }
+
+
 
 @media only screen and (max-width:688px) {
     .btn-live {
